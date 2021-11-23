@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<form>
+	<input type="email" name="email" id="email" required>
+	<button onClick="checkEmail()">Submit</button>
+</form>
+	<script type="text/javascript">
+		var testresult;
+function checkEmail(){
+	var email = document.getElementById('email').value;
+	 var filter = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i
+  if (filter.test(email))
+  {
+  	alert("email correct")
+  }else{
+  	alert("Please enter currect email address");
+  }
+
+	}
+	</script>
+</body>
+</html>
